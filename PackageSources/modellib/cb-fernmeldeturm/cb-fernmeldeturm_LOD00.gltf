@@ -14,7 +14,9 @@
         "ASOBO_material_shadow_options",
         "ASOBO_material_detail_map",
         "ASOBO_material_day_night_switch",
-        "ASOBO_macro_light"
+        "ASOBO_macro_light",
+        "ASOBO_material_invisible",
+        "ASOBO_tags"
     ],
     "scene" : 0,
     "scenes" : [
@@ -26,7 +28,9 @@
                 89,
                 94,
                 95,
-                96
+                96,
+                97,
+                98
             ]
         }
     ],
@@ -1467,6 +1471,34 @@
         {
             "mesh" : 64,
             "name" : "Telekom logo"
+        },
+        {
+            "mesh" : 65,
+            "name" : "COLLISION BOX",
+            "scale" : [
+                11.085755348205566,
+                5.805387496948242,
+                11.085755348205566
+            ],
+            "translation" : [
+                3.8967628479003906,
+                4.572174549102783,
+                -8.077546119689941
+            ]
+        },
+        {
+            "mesh" : 66,
+            "name" : "COLLISION BOX.001",
+            "scale" : [
+                3.529603958129883,
+                0.8707463145256042,
+                3.529603958129883
+            ],
+            "translation" : [
+                3.8967628479003906,
+                149.89768981933594,
+                -8.077546119689941
+            ]
         }
     ],
     "materials" : [
@@ -1779,6 +1811,34 @@
                 ],
                 "metallicFactor" : 0,
                 "roughnessFactor" : 0.4000000059604645
+            }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "extensions" : {
+                "ASOBO_material_invisible" : {
+                    "enabled" : true
+                },
+                "ASOBO_material_shadow_options" : {
+                    "noCastShadow" : true
+                },
+                "ASOBO_tags" : {
+                    "tags" : [
+                        "Collision"
+                    ]
+                }
+            },
+            "name" : "COLLISION material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
             }
         }
     ],
@@ -3014,6 +3074,34 @@
                     },
                     "indices" : 382,
                     "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 383,
+                        "NORMAL" : 384,
+                        "TEXCOORD_0" : 385
+                    },
+                    "indices" : 386,
+                    "material" : 20
+                }
+            ]
+        },
+        {
+            "name" : "Cube.007",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 387,
+                        "NORMAL" : 388,
+                        "TEXCOORD_0" : 389
+                    },
+                    "indices" : 386,
+                    "material" : 20
                 }
             ]
         }
@@ -6492,6 +6580,68 @@
             "componentType" : 5123,
             "count" : 744,
             "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 383,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                1,
+                24.444936752319336,
+                1
+            ],
+            "min" : [
+                -1,
+                -1,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 384,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 385,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 386,
+            "componentType" : 5123,
+            "count" : 30,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 387,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                1,
+                41.02568054199219,
+                1
+            ],
+            "min" : [
+                -1,
+                -1,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 388,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 389,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
         }
     ],
     "bufferViews" : [
@@ -8409,6 +8559,41 @@
             "buffer" : 0,
             "byteLength" : 1488,
             "byteOffset" : 856292
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 857780
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 858020
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 858260
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 60,
+            "byteOffset" : 858420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 858480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 858720
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 858960
         }
     ],
     "samplers" : [
@@ -8419,7 +8604,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 857780,
+            "byteLength" : 859120,
             "uri" : "cb-fernmeldeturm_LOD00.bin"
         }
     ]

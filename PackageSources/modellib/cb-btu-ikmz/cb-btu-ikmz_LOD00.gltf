@@ -11,7 +11,10 @@
     "extensionsUsed" : [
         "ASOBO_normal_map_convention",
         "ASOBO_material_parallax_window",
-        "ASOBO_macro_light"
+        "ASOBO_macro_light",
+        "ASOBO_material_invisible",
+        "ASOBO_material_shadow_options",
+        "ASOBO_tags"
     ],
     "scene" : 0,
     "scenes" : [
@@ -29,7 +32,9 @@
                 20,
                 22,
                 24,
-                26
+                26,
+                27,
+                28
             ]
         }
     ],
@@ -332,6 +337,46 @@
                 2.2388272285461426,
                 26.68948745727539
             ]
+        },
+        {
+            "mesh" : 17,
+            "name" : "COLLISION BOX",
+            "rotation" : [
+                0,
+                -0.07864654809236526,
+                0,
+                0.996902585029602
+            ],
+            "scale" : [
+                0.27844202518463135,
+                0.27844202518463135,
+                0.27844202518463135
+            ],
+            "translation" : [
+                19.077178955078125,
+                29.336349487304688,
+                39.19788360595703
+            ]
+        },
+        {
+            "mesh" : 18,
+            "name" : "COLLISION BOX.001",
+            "rotation" : [
+                0,
+                -0.07864654809236526,
+                0,
+                0.996902585029602
+            ],
+            "scale" : [
+                0.27844202518463135,
+                0.27844202518463135,
+                0.27844202518463135
+            ],
+            "translation" : [
+                12.62349796295166,
+                29.336349487304688,
+                79.84588623046875
+            ]
         }
     ],
     "materials" : [
@@ -545,6 +590,34 @@
                 ],
                 "metallicFactor" : 0,
                 "roughnessFactor" : 0.07000002264976501
+            }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "extensions" : {
+                "ASOBO_material_invisible" : {
+                    "enabled" : true
+                },
+                "ASOBO_material_shadow_options" : {
+                    "noCastShadow" : true
+                },
+                "ASOBO_tags" : {
+                    "tags" : [
+                        "Collision"
+                    ]
+                }
+            },
+            "name" : "COLLISION material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
             }
         }
     ],
@@ -891,6 +964,34 @@
                     },
                     "indices" : 114,
                     "material" : 12
+                }
+            ]
+        },
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 115,
+                        "NORMAL" : 116,
+                        "TEXCOORD_0" : 117
+                    },
+                    "indices" : 118,
+                    "material" : 13
+                }
+            ]
+        },
+        {
+            "name" : "Cube.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 119,
+                        "NORMAL" : 120,
+                        "TEXCOORD_0" : 121
+                    },
+                    "indices" : 118,
+                    "material" : 13
                 }
             ]
         }
@@ -2022,6 +2123,68 @@
             "componentType" : 5123,
             "count" : 930,
             "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 115,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                56.3017578125,
+                9.663700103759766,
+                48.67473602294922
+            ],
+            "min" : [
+                -76.37347412109375,
+                -100,
+                -97.21110534667969
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 116,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 117,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 118,
+            "componentType" : 5123,
+            "count" : 30,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 119,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                6.8068976402282715,
+                9.663700103759766,
+                -23.969085693359375
+            ],
+            "min" : [
+                -76.37347412109375,
+                -100,
+                -97.21110534667969
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 120,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 121,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
         }
     ],
     "bufferViews" : [
@@ -2599,6 +2762,41 @@
             "buffer" : 0,
             "byteLength" : 1860,
             "byteOffset" : 329088
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 330948
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 331188
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 331428
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 60,
+            "byteOffset" : 331588
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 331648
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 331888
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 332128
         }
     ],
     "samplers" : [
@@ -2609,7 +2807,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 330948,
+            "byteLength" : 332288,
             "uri" : "cb-btu-ikmz_LOD00.bin"
         }
     ]
