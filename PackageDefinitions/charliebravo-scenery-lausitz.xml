@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetPackage ReleaseNotes="PackageDefinitions\charliebravo-scenery-lausitz\ReleaseNotes.xml" Version="0.1.3">
+<AssetPackage ReleaseNotes="PackageDefinitions\charliebravo-scenery-lausitz\ReleaseNotes.xml" Version="0.1.4">
 	<ItemSettings>
 		<ContentType>SCENERY</ContentType>
 		<Title>Sehenswürdigkeiten und Orientierungspunkte in Cottbus und Lausitz</Title>
