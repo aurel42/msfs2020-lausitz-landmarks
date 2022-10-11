@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ModelInfo guid="{2ad22c19-bfa6-4395-a42d-994b9030cf53}" version="1.1">
-	<LODS>
-		<LOD minSize="100" ModelFile="kraftwerk-jaenschwalde-b_LOD00.gltf"/>
-		<LOD minSize="20" ModelFile="kraftwerk-jaenschwalde-b_LOD01.gltf"/>
-		<LOD minSize="0" ModelFile="kraftwerk-jaenschwalde-b_LOD02.gltf"/>
-	</LODS>
-</ModelInfo>

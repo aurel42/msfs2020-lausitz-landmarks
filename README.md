@@ -16,6 +16,9 @@ A big THANK YOU to all the people and organizations who provided invaluable help
 - LOD
 - collision boxes
 
+## Required libaries
+- [We Love VFR - Region 1](https://flightsim.to/file/2605/we-love-vfr-region-1) is needed to see the cooling towers of the Jänschwalde power plant, it also adds many other obstacles to the region (and to the rest of Europe)
+
 ## Recommended libraries
 Without them, some placeholder objects will be missing.
 - [EDHK Lights & Objects Developers Pack](https://flightsim.to/file/2549/edhk-lights-pack)
@@ -24,4 +27,3 @@ Without them, some placeholder objects will be missing.
 They improve the surroundings.
 - [Mamudesign Powerlines and Solar Farms](https://flightsim.to/file/26186/powerlines-and-solar-farms)
 - [Mamudesign Marinas](https://flightsim.to/file/38499/mamudesign-marinas)
-- [We Love VFR - Region 1](https://flightsim.to/file/2605/we-love-vfr-region-1)
